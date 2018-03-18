@@ -178,6 +178,7 @@ jobs:
               -DCMAKE_CXX_COMPILER=${CXX_COMPILER} \
               -DCMAKE_Fortran_COMPILER=${Fortran_COMPILER} \
               -DPETSC_DIR="/usr/lib/petscdir/3.4.2" \
+              -UPETSC_ARCH \
               -DPETSC_ARCH=linux-gnu-c-opt \
               -DCMAKE_BUILD_TYPE=${BUILD_TYPE} \
               -DENABLE_MPI=${ENABLE_MPI} \
@@ -220,6 +221,7 @@ before_script:
         -DCMAKE_CXX_COMPILER=${CXX_COMPILER}
         -DCMAKE_Fortran_COMPILER=${Fortran_COMPILER}
         -DPETSC_DIR="/usr/lib/petscdir/3.4.2" \
+        -UPETSC_ARCH \
         -DPETSC_ARCH=linux-gnu-c-opt \
         -DCMAKE_BUILD_TYPE=${BUILD_TYPE}
         -DENABLE_MPI=${ENABLE_MPI}
