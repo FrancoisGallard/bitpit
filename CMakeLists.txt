@@ -455,8 +455,8 @@ isModuleEnabled("LA" MODULE_LA_ENABLED)
 if (MODULE_LA_ENABLED)
     list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/external/PETSc/cmake")
 
-    set(PETSC_DIR "" CACHE PATH "Directory in which PETSc resides")
-    set(PETSC_ARCH "arch-linux2-c" CACHE STRING "Build architecture")
+    #set(PETSC_DIR "" CACHE PATH "Directory in which PETSc resides")
+    #set(PETSC_ARCH "arch-linux2-c" CACHE STRING "Build architecture")
 
     find_package(PETSc REQUIRED)
 
